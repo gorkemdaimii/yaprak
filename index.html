@@ -82,12 +82,14 @@
   }
 
   section{
+    display:flex;
     min-height:100vh;
     flex-direction:column;
     align-items:center;
     justify-content:center;
     text-align:center;
     padding:8vh 6vw;
+    width:100%;
   }
 
   .eyebrow{
@@ -258,6 +260,17 @@
     letter-spacing:.15em;
     color:var(--parchment-dim);
     opacity:.5;
+  }
+
+  /* ---------- mobile adjustments ---------- */
+  @media (max-width:600px){
+    section{ padding:6vh 7vw; }
+    h1{ max-width:100%; font-size:clamp(2rem, 8.5vw, 2.8rem); }
+    p.lede{ max-width:100%; font-size:.95rem; }
+    .letter-block{ max-width:100%; font-size:clamp(1.1rem, 5vw, 1.35rem); }
+    .video-frame{ width:94vw; margin-top:2rem; }
+    .begin-btn{ padding:.85rem 2rem; }
+    .signature{ font-size:1.8rem; }
   }
 </style>
 </head>
