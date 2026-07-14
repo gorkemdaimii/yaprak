@@ -83,7 +83,6 @@
 
   section{
     min-height:100vh;
-    display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
@@ -327,11 +326,13 @@
         </div>
         <!--
           BURAYA YOUTUBE VİDEOSUNU YAPIŞTIR:
-          src="https://www.youtube.com/embed/VIDEO_ID" şeklinde,
+          data-src="https://www.youtube.com/embed/VIDEO_ID" şeklinde,
           VIDEO_ID kısmını kendi videonun ID'siyle değiştir.
+          ÖNEMLİ: youtu.be/... veya youtube.com/watch?v=... formatı iframe içinde ÇALIŞMAZ,
+          mutlaka /embed/ formatında olmalı.
         -->
         <iframe id="ytFrame"
-          data-src="https://youtu.be/7Bh0mDcfTrE?si=BwowdwQV1JiB20nK"
+          data-src="https://www.youtube.com/embed/7Bh0mDcfTrE"
           title="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </section>
